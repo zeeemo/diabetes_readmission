@@ -6,16 +6,16 @@ I examined 10 years of data (1999-2008) comprised from 130 US hospitals that rep
 
 # Executive Summary
 
-I analyzed 10 years of US hospital data for patients with diabetes in order to determine whether or not, based on a series of features, if I could accurately predict whether they would be readmitted to the hospital. In my analysis, I used a few different models including Logistic Regression, KNearestNeighbors, and RandomForest. Overall, Logistic Regression worked best because it performed consistently on my training and test sets but I was only able to accurately predict whether a patient with a diabetic diagnosis would be readmitted with around a .62 accuracy. 
+I analyzed 10 years of US hospital data for patients with diabetes in order to determine whether or not, based on a series of features, if I could accurately predict whether they would be readmitted to the hospital. In my analysis, I used a few different models including Logistic Regression, KNearestNeighbors, and RandomForest. Overall, Logistic Regression worked best because it performed consistently on my training and test sets but I was only able to accurately predict whether a patient with a diabetic diagnosis would be readmitted with around a .62 accuracy. Through parameter tuning I was able to achieve an almost exact same score using RandomForest with a .617 score on my training and a .618 score on my testing datasets. This leads me to believe there is more room for improvement by more closely examining the relationship between my independent and dependent variables.
 
-To view this project from beginning to end, please view the notebooks in the following order:
+To view this project from beginning to end, please view the notebooks in the following order. MY EDA notebook is the most expansive due to the large amount of cleaning required with the dataset.
 
 - [Capstone_EDA](./Capstone_EDA.ipynb)
 - [model_one_logreg](./model_one_logreg.ipynb)
 - [model_two_knn](./model_two_knn.ipynb)
 - [model_three_rf](./model_three_rf.ipynb)
 
-Additionally, there are separate notebooks I used for parameter tuning - however I only made permanent changes as my score improved and remained stable. Those are listed below for reference.
+Additionally, there are separate notebooks I used for parameter tuning - however I only made permanent changes to my actual models as my score improved and remained stable. Those are listed below for reference.
 
 - [logreg_tuning](./logreg_tuning.ipynb)
 - [knn_tuning](./knn_tuning.ipynb)
@@ -51,7 +51,7 @@ The diagnostic codes used in three of the columns can be found below. For my ana
 |Feature|Type|Description|Missing Percentage|
 |---|---|---|---|
 |Encounter ID|Numeric|Unique identifier of an encounter|0%|
-|Patient number|Numeric	Unique identifier of a patient|0%|
+|Patient number|Numeric|Unique identifier of a patient|0%|
 |Race|Nominal|Values: Caucasian, Asian, African American, Hispanic, and other|2%|
 |Gender|Nominal|Values: male, female, and unknown/invalid|0%|
 |Age|Nominal|Grouped in 10-year intervals: 0, 10), 10, 20), …, 90, 100)|0%|
@@ -89,24 +89,6 @@ The diagnostic codes used in three of the columns can be found below. For my ana
 - A README markdown file which provides an introduction, overview, and information related to my project
 - My presentation slideshow as a .pdf with sources attached
 - Files for my data, code, and images used throughout both the notebook and presentation
-
-## Presentation Structure
-
-**Powerpoint uploaded as a .pdf.**
-**Begin with the data science problem**
-> 
-
-**Use visuals which are appropriately scaled and interpretable**
-> 
-
-**Discuss procedure/methodology**
-> 
-    
-**Discuss primary findings**
-> 
-
-**Provide clear recommendations**
-> 
 
 ---
 
